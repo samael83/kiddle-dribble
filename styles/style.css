@@ -1,0 +1,144 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, canvas {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end css reset */
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#canvas {
+    display: block;
+}
+
+.color-palette-grid {
+    display: grid;
+    grid-template-columns: repeat(10, minmax(1vh, 10vh));
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 10px;
+    padding: 5px;
+}
+
+.color-palette-grid-cell {
+    padding: 50%;
+    background: red;
+    border-radius: 50%;
+    cursor: pointer;
+    /* Background gredients and shadows */
+    background: -moz-linear-gradient(-45deg, rgba(0,0,0,0.3) 0%, rgba(255,255,255,0.3) 100%); 
+    background: -webkit-linear-gradient(-45deg, rgba(0,0,0,0.3) 0%,rgba(255,255,255,0.3) 100%); 
+    background: linear-gradient(135deg, rgba(0,0,0,0.3) 0%,rgba(255,255,255,0.3) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#4dffffff',GradientType=1 ); 
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.6);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.6);
+}
+/*
+.color-palettle-item {
+    border-radius: 50%;
+    
+    background: -moz-linear-gradient(-45deg, rgba(0,0,0,0.3) 0%, rgba(255,255,255,0.3) 100%); 
+    background: -webkit-linear-gradient(-45deg, rgba(0,0,0,0.3) 0%,rgba(255,255,255,0.3) 100%); 
+    background: linear-gradient(135deg, rgba(0,0,0,0.3) 0%,rgba(255,255,255,0.3) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#4dffffff',GradientType=1 ); 
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.6);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.6);
+}
+*/
+.color-one {
+    background-color: #ff00dd;
+}
+
+.color-two {
+    background-color: #ff0000;
+}
+
+.color-three {
+    background-color: #6f00ff;
+}
+
+.color-four {
+    background-color: #0400ff;
+}
+
+.color-five {
+    background-color: #00ccff;
+}
+
+.color-six {
+    background-color: #09ff00;
+}
+
+.color-seven {
+    background-color: #eeff00;
+}
+
+.color-eight {
+    background-color: #ff7300;
+}
+
+.color-nine {
+    background-color: #000000;
+}
+
+.color-ten {
+    background-color: #ffffff;
+}
+
+.modal {
+    height: 100%;
+    width: 100%;
+    background: snow;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
